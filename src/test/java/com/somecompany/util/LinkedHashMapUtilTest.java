@@ -9,6 +9,9 @@ import java.util.Map;
 import static com.somecompany.util.LinkedHashMapUtil.sortLHM;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * @author <a href="mailto:1arxemond1@gmail.com">Iurii Glushenkov</a>
+ */
 public class LinkedHashMapUtilTest {
     @Test
     public void testSortLHM() {

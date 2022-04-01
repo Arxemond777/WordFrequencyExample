@@ -16,8 +16,8 @@ public class WordFrequencyUtil {
      * if you're going to perform really long strings. The drawback of it may be if you do
      * it in a high-load server-side application with multiple clients because you can exceed
      * the number of threads if you won't control it.
-     *
-     * To control the length of a sentence you can use validation
+     * <p>
+     * To control the length of a sentence you can use validation which was commented now
      *
      * @param sentence - a piece of text
      * @return
