@@ -35,7 +35,7 @@ public class WordFrequencyUtil {
             wordFreq.put(word, wordFreq.getOrDefault(word, 0) + 1);
         }
 
-        wordFreq = sortLHM(wordFreq, (es1, es2) -> es2.getValue().compareTo(es1.getValue()));
+        wordFreq = sortLHM(wordFreq, (entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
 
 
         return wordFreq;
