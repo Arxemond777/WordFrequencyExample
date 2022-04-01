@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class WordFrequencyUtilTest {
     @Test
     public void testNormalWordFreq() {
-        String sentence = "asd, 9 df92 FDDF   gfgd gfgd";
+        String sentence = "   asd, 9 df92 FDDF   gfgd gfgd    ";
 
         Map<String, Integer> map = new LinkedHashMap<>();
         map.put("gfgd", 2);

@@ -29,6 +29,7 @@ public class WordFrequencyUtil {
 //        sentence = sentence.replaceAll("[^\\da-zA-Z\\s]", ""); // won't work for Cyrillic/Chinese/German/Scandinavian languages
 //        sentence = sentence.replaceAll("[^\\d\\p{L}+\\s]", ""); // will work for other languages but not for I'm
         sentence = sentence.replaceAll("[^'\\d\\p{L}+\\s]", ""); // will work for other languages and I'm
+        sentence = sentence.trim(); // for this case "     aa bb      "
 
         for (String word : sentence.split("\\s+")) {
             wordFreq.put(word, wordFreq.getOrDefault(word, 0) + 1);
