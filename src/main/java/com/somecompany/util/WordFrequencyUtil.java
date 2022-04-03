@@ -25,6 +25,10 @@ public class WordFrequencyUtil {
         if (sentence == null) return null;
 //        else if (sentence.length() > 100_000) throw new BusinessException("This text is too long"); // if you want to control the length
 
+        /**
+         * delete (and,or)
+         * steaming airy->air
+         */
         Map<String, Integer> wordFreq = new LinkedHashMap<>();
 //        sentence = sentence.replaceAll("[^\\da-zA-Z\\s]", ""); // won't work for Cyrillic/Chinese/German/Scandinavian languages
 //        sentence = sentence.replaceAll("[^\\d\\p{L}+\\s]", ""); // will work for other languages but not for I'm
